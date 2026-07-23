@@ -1,2 +1,49 @@
-<p>data-binding works!</p>
 <h1>We are doing Data-Binding</h1>
+<br>
+<div id="wrapper">
+    <h3>Company:</h3>
+    <p>{{companyName}}</p>
+    <h3>Stream Name</h3>
+
+
+    <input type="text" [value]="streamName">
+    <!-- ng binding -->
+    <input type="text" [(ngModel)]="streamName">
+
+    <h3>You are an employee:</h3>
+    <p>{{isEmployee}}</p>
+    <h3>Designation:</h3>
+    <input [type]=inputType1 name="desig">
+    <label for="AASE">AASE</label>
+    <input [type]=inputType1 name="desig">
+    <label for="ASE">ASE</label>
+    <h3>Know technologies</h3>
+    <label for="HTML">
+        HTML
+        <input [type]=inputType2 name="tech">
+    </label>
+
+    <input [type]=inputType2 name="tech" id="CS">
+    <label for="CS">CS</label>
+    <input [type]=inputType2 name="tech">
+    <label for="JS">JS</label>
+    <br>
+    <button class="btn btn-success" type="button" (click)="changeStreamName('Spring Boot')">Change Stream!</button>
+    <button class="btn btn-success" type="button" (click)="changeCompanyName('Microsoft')">Change Company!</button>
+    <select  #city (change)="alertCitySelection(city.value)">
+        <option value="Agra">Agra</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Bhopal">Bhopal</option>
+    </select>
+    <br><br>
+    <h3>What is your work Prefrence?</h3> 
+     <select  [(ngModel)] = workPreference >
+        <option value="WFH">WFH</option>
+        <option value="On-Site">On Site</option>
+    </select>
+    <br>
+    <hr>
+    <h5 style="display:inline-block">Selected Stream: <span>{{streamName}}</span> </h5>
+    <h5>Work Preference is: {{workPreference}}</h5>
+
+</div>

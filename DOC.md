@@ -6,7 +6,8 @@
 - ng serve <--to start the prj
 - npm i bootstrap
 
-
+# New concepts: 
+- Template Reference Variables (#city used in select to get the value out of options)
 
 ## learnings: 
 - package.json-->listing of all packages/libs
@@ -31,3 +32,13 @@
 
 
 # Data Binding
+- Interpolation
+- Property Binding
+
+# Event Binding 
+- to get something from the html compo to ts (the opp way)
+
+
+# Directives--> NgModel (2way data binding)
+- Only use `[(ngModel)]` only with elements that get some value ex: input, checkbox, dropdown   
+    - not to use with span, label, etc
