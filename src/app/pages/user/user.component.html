@@ -1,2 +1,29 @@
-<p>user works!</p>
-<h1>User is working</h1>
+<h1>API Calling(httpClient)</h1>
+<div class="row">
+    <div class="col-6">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sr no.</th>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>phone</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                @for(data of userList; track $index){
+                        <tr>
+                        <td>{{$index +1}}</td>
+                        <td>{{data.name}}</td>
+                        <td>{{data.username}}</td>
+                        <td>{{data.email}}</td>
+                        <td>{{data.phone}}</td>
+                    </tr>
+                    }
+            
+            </tbody>
+        </table>
+    </div>
+</div>

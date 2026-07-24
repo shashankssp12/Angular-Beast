@@ -1,0 +1,39 @@
+
+<body>
+    <div id="wrapper">
+        <h1>This is Control Flow Page</h1>
+        <div id="input-div">
+            <!-- <input type="text" value="ControlFlow"> -->
+             @if(isTextVisible()){
+                <h3>I am visible</h3>   
+             }@else{
+                <p>Hidden</p>
+             }
+             <h3 *ngIf="isTextVisible()">I am also visible</h3>
+        </div>
+
+        <div id="btn-div">
+            <button class="btn btn-success"  (click)="showText()">Show</button>
+            <button class="btn btn-danger" (click)="hideText()">Hide</button>
+        </div>
+        <h4>Result</h4>
+        <div id="print">
+            <p style="display: inline-block; ">Variable: {{isVisible}}</p> 
+            <p style="display: inline-block;">Signal: {{isTextVisible()}}</p>
+        </div>
+
+        <h3>For control flow</h3>
+        <div id="city-list">
+            <ul>
+            @for(city of cityList; track $index ){
+                <li>{{city}}</li>
+            }
+            </ul>
+            <ul>
+                <li *ngFor="let city of cityList">{{city}}</li>
+            </ul>
+        </div>
+
+    </div>
+    
+</body>

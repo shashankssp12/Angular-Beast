@@ -1,0 +1,40 @@
+
+<body>
+    <div id="wrapper">
+        <h1>Dynamic Styling</h1>
+        <div id="input-div">
+            <div id="experiment-div" [ngClass]="divClassName">
+                <h3>NgClass:</h3>
+                <h5>Text- {{divClassName}}</h5>
+            </div>
+            <div id="experiment-div" [class]="divClassName">
+                <h3>Property Binding</h3>
+                <h5>Text-{{divClassName}}</h5>
+            </div>
+            <input type="text" [(ngModel)]="divClassName" value="">
+        </div>
+
+
+
+    </div>
+    <br>
+    <div id="wrapper2">
+        <h2>Ng Style Usage</h2>
+        <div id="style-div" class="">
+            <div id="1" [ngStyle]="{'background-color': todoStyle}">
+                <h3>Styled Text1</h3>
+            </div>
+            <div id="2">
+                <input type="text" [(ngModel)]="todoStyle">
+            </div>
+        <br>  
+            <!-- property-binding -->
+                    <div id="1" [style.color]="todoStyle2">
+                <h3>Styled Text2</h3>
+            </div>
+            <div id="2">
+                <input type="text" [(ngModel)]="todoStyle2">
+            </div>
+        </div>
+    </div>
+</body>

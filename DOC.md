@@ -20,8 +20,10 @@
 - component = page, like we used to creates multiple pages in html, here we create components 
 - every component will contain 3 files -> .html,.css,.ts (one more .specs.ts)
 - all the code will be in src/app folder, nothing outside it
-
-
+- There are 2 types of forms in Angular:`Template forms` and `Reactive forms` 
+- Many events happen behind the scenes in Angular SAP, 
+    - When you shift btw components, they get destroyed and many more, like js we can track them here also
+    - Similarly, there is a life cycle event `ngOnIt`-> this happens as soon as Component is initialized
 
 # Routing 
 - How to directly render component in the `app.component.ts` and .html--> using export classname
@@ -42,3 +44,13 @@
 # Directives--> NgModel (2way data binding)
 - Only use `[(ngModel)]` only with elements that get some value ex: input, checkbox, dropdown   
     - not to use with span, label, etc
+
+# Control Flow with Signals 
+- @if(){}@else{}--> import signal <-- Came with Angular 17
+- *ngIF="" and *ngFor=""  also covered
+- ngStyle, ngClass -- imports needed
+
+
+# API CALLING (httpClient)
+- Step1: Go to `app.config.ts` --> add `provideHttpClient()` in providers
+- 

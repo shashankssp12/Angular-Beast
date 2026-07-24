@@ -1,0 +1,11 @@
+#input-div{
+    display: flex;
+    gap: 35px;
+}
+#wrapper2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.267);
+}
