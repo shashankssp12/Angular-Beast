@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="d-flex border border-2 border-black justify-content-around ">
+        <!-- left -->
+         <div class="row">
+            <div class="col">
+                <h3 class="bg-primary">EmployeeList</h3>
+                <table class="table table-bordered">
+                    <!-- put table -->
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                            <!-- add loop -->
+                            <td>d1</td>
+                            <td>d2</td>
+                            <td>d3</td>
+                            <td>d4</td>
+                            <td>d5</td>
+                        </tr>
+                     </tbody>
+                </table>
+            </div>
+         </div>
+         <!-- right -->
+          <div class="row">
+            <div class="col">
+                <!-- form -->
+                 <div class="card">
+                    <h3 class="card-header text-bg-success ">Add/Edit Employee</h3>
+                    <div class="card-body">
+                        <form class="form-control  ">
+                            <label for="fullname" class="form-label  ">Full Name</label>
+                            <br>
+                            <input type="text" class="form-control"  id="fullname">   
+                            <br>
+                            <label for="email" class="form-label  ">Email</label>
+                            <br>
+                            <input type="email" class="form-control" id="email">
+                            <br>
+                            <label for="phone" class="form-label  ">Phone </label>
+                            <br>
+                            <input type="number" class="form-control" id="phone">
+                            <br>
+                            <label for="Gender" class="form-label  ">Gender</label>
+                            <select class="form-select" id="">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="unmentioned">Rather not say</option>
+                            </select>
+                            <br>
+                            <label for="doj" class="form-label">Date of Joining</label>
+                            <br>
+                            <input type="date" class="form-control"  id="doj">
+                            <div class="d-flex justify-content-evenly mt-3">
+                                <button class="btn btn-success">Save</button>
+                                <button class="btn btn-danger">Clear</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+</div>

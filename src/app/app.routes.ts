@@ -3,6 +3,7 @@ import { UserComponent } from './pages/user/user.component';
 import { DataBindingComponent } from './pages/data-binding/data-binding.component';
 import { ControlFlowComponent } from './pages/control-flow/control-flow.component';
 import { DynamicStylingComponent } from './pages/dynamic-styling/dynamic-styling.component';
+import { EmployeeComponent } from './pages/employee/employee.component';
 
 export const routes: Routes = [
     {
@@ -25,6 +26,10 @@ export const routes: Routes = [
         path:"dynamic-styling-page",
         component:DynamicStylingComponent
      },
+     {
+        path: 'employee-page',
+        component: EmployeeComponent
+     }
      
      
 
